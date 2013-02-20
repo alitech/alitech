@@ -34,10 +34,10 @@
 										<%= link_to "A Empresa", empresas_path %>
 									</li>
 									<li>
-										<a href="#">Fale Conosco</a>
+										<%= link_to "Fale Conosco", new_fale_conosco_path %>
 									</li>
 									<li>
-										<a href="#">Vagas</a>
+										<%= link_to "Vagas", vagas_path %>
 									</li>
 								</ul>
 							</li>
@@ -55,13 +55,13 @@
 								<a href="#">Soluções</a>
 								<ul class="dropdown">
 									<li>
-										<a href="#">Celula Produtiva</a>
+										<%= link_to 'Celula Produtiva', celula_produtivas_path %>
 									</li>
 									<li>
-										<a href="#">Outsourcing</a>
+										<%= link_to 'Outsourcing', outsourcings_path %>
 									</li>
 									<li>
-										<a href="#">Consultoria</a>
+										<%= link_to 'Consultoria', consultorias_path %>
 									</li>
 								</ul>
 							</li>
@@ -70,10 +70,10 @@
 								<a href="#">Produtos</a>
 								<ul class="dropdown">
 									<li>
-										<a href="#">Seja um Investidor</a>
+										<%= link_to "Seja um Investidor", new_seja_investidore_path %>
 									</li>
 									<li>
-										<a href="#">Cadastre sua ideia</a>
+										<%= link_to "Cadastre sua ideia", new_ideia_prod_path %>
 									</li>
 									<li>
 										<%= link_to "Produtos", produtos_path %>
@@ -120,7 +120,7 @@
 									<div class="feature-content">
 										<h3><%= @title %></h3>
 										<% if @pagina_principal != "S" %>
-										<%= yield %> aa
+										<%= yield %>
 										<% end %>
 									</div>
 									<!-- /feature-content -->

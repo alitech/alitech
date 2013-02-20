@@ -107,7 +107,7 @@ ul.features-list li {
 ul.features-list .feature {
 	float: left;	
 	
-	width: 48%;
+	width: 100%;
 	display: table;
 	padding: 12px 12px 12px 0;
 	margin: 0 0 .25em;

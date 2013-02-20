@@ -11,6 +11,55 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130220214925) do
+
+  create_table "fale_conoscos", :force => true do |t|
+    t.string   "nome"
+    t.string   "email"
+    t.string   "telefone"
+    t.string   "empresa"
+    t.string   "site"
+    t.string   "cidade"
+    t.string   "uf"
+    t.string   "assunto"
+    t.text     "mensagem"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ideia", :force => true do |t|
+    t.string   "descricao"
+    t.string   "nome"
+    t.string   "email"
+    t.string   "telefone"
+    t.string   "cidade"
+    t.text     "uf"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ideia_prods", :force => true do |t|
+    t.string   "descricao"
+    t.string   "nome"
+    t.string   "email"
+    t.string   "telefone"
+    t.string   "cidade"
+    t.text     "uf"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "seja_investidores", :force => true do |t|
+    t.string   "nome"
+    t.string   "email"
+    t.string   "telefone"
+    t.string   "empresa"
+    t.string   "site"
+    t.string   "cidade"
+    t.string   "uf"
+    t.text     "mensagem"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

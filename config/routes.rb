@@ -1,8 +1,14 @@
 Alitech::Application.routes.draw do
 
+  resources :seja_investidores
+  resources :consultorias
+  resources :outsourcings
+  resources :celula_produtivas
+  resources :vagas
+  resources :ideia_prods
   resources :empresas
+  resources :fale_conoscos
   resources :nossosparceiros 
-  resources :servicos
   resources :produtos
 
   # The priority is based upon order of creation:
