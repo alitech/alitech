@@ -13,44 +13,37 @@
 </div>
 <% end %>
 
-<div class="field">
-	<%= f.label :nome %>
-	<%= f.text_field :nome %>
+<div class="controls controls-row">
+	<%= f.label :nome, :class=>"span3" %>
+	<%= f.label :empresa %>
+	<%= f.text_field :nome, :class=>"span3" %>
+	<%= f.text_field :empresa, :class=>"span3" %>
 </div>
-<div class="field">
-	<%= f.label :email %>
-	<%= f.text_field :email %>
+<div class="controls controls-row">
+	<%= f.label :email, :class=>"span3" %>
+	<%= f.label :telefone, :class=>"span3" %>
+	<%= f.email_field :email, :class=>"span3" %>
+	<%= f.telephone_field :telefone, :class=>"span3" %>
 </div>
-<div class="field">
-	<%= f.label :telefone %>
-	<%= f.text_field :telefone %>
+<div class="controls">
+	<%= f.label :site %>
+	<%= f.text_field :site, :size => "57" %>
+</div>
+<div class="controls controls-row">
+	<%= f.label :cidade, :class=>"span3" %>
+	<%= f.label :uf, :class=>"span3" %>
+	<%= f.text_field :cidade, :class=>"span3" %>
+	<%= f.text_field :uf, :class=>"span3" %>
 </div>
 
-<div class="field">
-	<%= f.label :empresa %>
-	<%= f.text_field :empresa %>
-</div>
-<div class="field">
-	<%= f.label :site %>
-	<%= f.text_field :site %>
-</div>
-<div class="field">
-	<%= f.label :cidade %>
-	<%= f.text_field :cidade %>
-</div>
-<div class="field">
-	<%= f.label :uf %>
-	<%= f.text_field :uf %>
-</div>
-<div class="field">
+<div class="controls">
 	<%= f.label :assunto %>
-	<%= f.text_field :assunto %>
+	<%= f.text_field :assunto, :class=>"span3" %>
 </div>
-<div class="field">
-	<%= f.label :mensagem %>
-	<%= f.text_area :mensagem %>
+<div>
+	<%= f.text_area :mensagem, :cols => "150", :rows => "5" , :placeholder=>"Mensagem" %>
 </div>
-<div class="actions">
-	<%= f.submit  'Enviar Mensagem'%>
+<div class="modal-footer">
+	<%= f.submit  'Enviar Mensagem', :class=>"btn btn-primary"%>
 </div>
 <% end %>

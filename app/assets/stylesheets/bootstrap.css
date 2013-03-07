@@ -180,7 +180,8 @@ a:hover {
   width: 700px;
 }
 .span8 {
-  width: 620px;
+  width: 640px;
+  margin: 0;
 }
 .span7 {
   width: 540px;
@@ -2585,8 +2586,8 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: #555555;
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: #338000;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3944,7 +3945,8 @@ a.thumbnail:hover {
   left: auto;
   right: 15px;
 }
-.carousel-control:hover {
+.carousel-control:hover,
+.carousel-control:focus {
   color: #ffffff;
   text-decoration: none;
   opacity: 0.9;
@@ -3998,4 +4000,52 @@ a.thumbnail:hover {
 }
 .invisible {
   visibility: hidden;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
 }

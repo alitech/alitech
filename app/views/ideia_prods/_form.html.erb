@@ -13,31 +13,27 @@
 </div>
 <% end %>
 
-<div class="field">
-	<%= f.label :descricao %>
-	<%= f.text_field :descricao %>
-</div>
-<div class="field">
+<div class="controls">
 	<%= f.label :nome %>
 	<%= f.text_field :nome %>
 </div>
-<div class="field">
+<div class="controls controls-row">
 	<%= f.label :email %>
-	<%= f.text_field :email %>
-</div>
-<div class="field">
 	<%= f.label :telefone %>
-	<%= f.text_field :telefone %>
+	<%= f.email_field :email %>
+	<%= f.telephone_field :telefone %>
 </div>
-<div class="field">
+<div class="controls controls-row">
 	<%= f.label :cidade %>
 	<%= f.text_field :cidade %>
-</div>
-<div class="field">
 	<%= f.label :uf %>
-	<%= f.text_area :uf %>
+	<%= f.text_field :uf %>
 </div>
+<div>
+	<%= f.text_area :descricao, :cols => "150", :rows => "5", :placeholder=>"Descrião" %>
+</div>
+
 <div class="actions">
-	<%= f.submit %>
+	<%= f.submit 'Enviar Mensagem',  :class=>"btn btn-primary" %>
 </div>
 <% end %>

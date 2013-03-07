@@ -2,25 +2,37 @@
 	<div id="landing">
 		<div class="inner">
 			<div class="container">
-				<div id="myCarousel" class="carousel">
-					<div class="carousel-inner">
-						<ul>
-							<li>
-								<%= image_tag("banner1.jpg",  :size=>'110x85', :alt =>'Thumbnail') %>
-							</li>
-							<li>
-								<%= image_tag("banner2.jpg",  :size=>'110x85', :alt =>'Thumbnail') %>
-							</li>
-							<li>
-								<%= image_tag("banner3.jpg",  :size=>'110x85', :alt =>'Thumbnail') %>
-							</li>
-							<li>
-								<%= image_tag("banner4.jpg",  :size=>'110x85', :alt =>'Thumbnail') %>
-							</li>
-						</ul>
+
+				<section id="carousel">
+					<div id="myCarousel" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="item active">
+								<%= image_tag("banner1.jpg",:alt =>'') %>
+							</div>
+							<div class="item">
+								<%= image_tag("banner2.jpg",:alt =>'') %>
+							</div>
+							<div class="item">
+								<%= image_tag("banner3.jpg", :alt =>'') %>
+							</div>
+							<div class="item">
+								<%= image_tag("banner4.jpg", :alt =>'') %>
+							</div>
+						</div>
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>
-				</div>
+			<!-- myCarousel  -->
+			</section>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
